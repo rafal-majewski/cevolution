@@ -7,6 +7,7 @@ public:
 	const Kind kind;
 	const Power power;
 	Entity(const Position position, const Kind kind, const Power power);
+	bool operator==(const Entity<Position, Kind, Power> otherEntity) const;
 };
 
 #include "./Entity.cpp"
